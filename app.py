@@ -4,6 +4,8 @@ import streamlit as st
 
 from ukraine import make_ukrainian_colors
 
+st.set_page_config(page_title='Make colors not war', page_icon='assets/Coat_of_Arms_of_Ukraine.png')
+
 st.title('Ukraine colors on your avatar')
 
 POSSIBLE_EXTENSIONS = ('png', 'jpg', 'jpeg')

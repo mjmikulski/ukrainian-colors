@@ -10,6 +10,15 @@ POSSIBLE_EXTENSIONS = ('png', 'jpg', 'jpeg')
 
 input_file = st.file_uploader('Upload your image', type=POSSIBLE_EXTENSIONS)
 
+st.sidebar.markdown("""
+
+If you want to give feedback or have any problems with this app, create an issue [here](https://github.com/mjmikulski/ukrainian-colors/issues).
+
+You can support Ukrainian Army by making a transfer [here](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi).
+
+**Слава Україні!**
+""")
+
 if input_file is not None:
     type_, extension = input_file.type.lower().split('/')
 
@@ -21,7 +30,7 @@ if input_file is not None:
         st.error(f'Unknown extension of the uploaded input_file: {extension}')
         st.stop()
 
-    output_filename = f'Go_Ukraine_{input_file.name}'
+    output_filename = f'SlavaUkraini--{input_file.name}'
 
     file_bytes = np.asarray(bytearray(input_file.read()), dtype=np.uint8)
     img = cv2.imdecode(file_bytes, cv2.IMREAD_COLOR)

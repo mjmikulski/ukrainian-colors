@@ -39,4 +39,7 @@ def make_ukrainian_colors(img: np.ndarray, saturate: bool = True) -> np.ndarray:
 
     output_img = cv2.cvtColor(img_hsv, cv2.COLOR_HSV2BGR)
 
+    output_img[-1, -2, :] = (70, 67, 75)
+    output_img[-1, -1, :] = (80, 84, 78)
+
     return output_img

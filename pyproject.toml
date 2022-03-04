@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ukrainian-colors"
+version = "0.1.0"
+description = "Turn any image into Ukrainian flag."
+authors = ["Maciej Mikulski <maciej.mikulski@netguru.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.10"
+numpy = "^1.22.2"
+streamlit = "^1.7.0"
+opencv-python = "^4.5.5"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

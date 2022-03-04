@@ -1,0 +1,13 @@
+# PyCharm
+/.idea/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# OSX Specific
+.DS_Store
